@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<span class="sep"> | </span>
+			<span class="sep"> </span>
 				<?php
 				printf( esc_html__( 'Created by Brian Sakurada 2019' ));
 				?>

@@ -1,8 +1,8 @@
 /*!
 Theme Name: Gaijin Assist
 Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Author: Brian Sakurada
+Author URI: https://sakubs.github.io/github.io/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -68,6 +68,16 @@ html {
 
 body {
 	margin: 0;
+
+}
+
+.site-footer {
+	background-color: #8a140e;
+	color: rgba(24, 161, 252);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
 }
 
 /**
@@ -395,10 +405,10 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #172b2a;
 	font-family: sans-serif;
 	font-size: 16px;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.5;
 }
 
@@ -469,8 +479,9 @@ html {
 }
 
 body {
-	background: #fff;
 	/* Fallback for when there is no custom background color defined. */
+	/*background: linear-gradient(90deg, #3aafa9, #2b7a78), url("torii.jpg");*/
+	background: linear-gradient(90deg, rgba(154, 222, 252, 0.72), rgba(24, 161, 252, 0.72));
 }
 
 hr {
@@ -486,6 +497,15 @@ ul, ol {
 
 ul {
 	list-style: disc;
+}
+
+.main-ul {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.6rem;
+	list-style: none;
+	line-height: 3rem;
 }
 
 ol {
@@ -518,6 +538,15 @@ figure {
 	/* Extra wide images within figure tags don't overflow the content area. */
 }
 
+.site-footer {
+	align-items: baseline;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-height: 50px;
+}
+
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
@@ -531,14 +560,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
+	border-color: #17252a;
+	border-radius: 5px;
+	background: #8a140e;
+	color: #feffff;
+	font-size: 15px;
+	font-size: 0.8rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
 }
 
 button:hover,
@@ -546,6 +575,8 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
+	background: #8a140e;
+	color: #e0e8f0;
 }
 
 button:active, button:focus,
@@ -614,15 +645,19 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #8a140e;
+	text-decoration: none;
 }
 
 a:visited {
-	color: purple;
+	color: #8a140e;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	background-color: #8a140e;
+	border-radius: 3px;
+	color: white;
+	padding: 0.2em;
 }
 
 a:focus {
@@ -639,7 +674,6 @@ a:hover, a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
 }
 
@@ -652,7 +686,6 @@ a:hover, a:active {
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
 	position: absolute;
 	top: 100%;
 	left: -999em;
@@ -670,6 +703,7 @@ a:hover, a:active {
 }
 
 .main-navigation ul ul a {
+	color: #f1f1f1;
 	width: 200px;
 }
 
@@ -773,13 +807,13 @@ a:hover, a:active {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
+	display: flex;
 	float: left;
 	margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
+	display: flex;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -844,9 +878,15 @@ a:hover, a:active {
 
 .post,
 .page {
+	display: flex;
+	align-content: center;
+	flex-direction: column;
 	margin: 0 0 1.5em;
 }
 
+img {
+	max-width: 1000px;
+}
 .updated:not(.published) {
 	display: none;
 }
