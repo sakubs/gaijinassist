@@ -547,6 +547,10 @@ figure {
 	min-height: 50px;
 }
 
+.site-header {
+	min-height: 3rem;
+}
+
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
@@ -714,6 +718,8 @@ a:hover, a:active {
 
 .main-navigation li {
 	float: left;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 	position: relative;
 }
 
